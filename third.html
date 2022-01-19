@@ -96,8 +96,33 @@
           <header class="blog-post-header">
             <h2 class="title mb-2">How sports are significant?</h2>
             <div class="meta mb-3">
-              <span class="date">Published 6 days ago</span
-              ><span class="time">5 min read</span
+              <span class="date"><script type = "text/javascript" >
+                // By @dab2020 on github
+                  // One month Time in ms (milliseconds)
+                  var one_month = 1000 * 60 * 60 * 24 * 30
+                
+              // To set present_dates to two variables
+              var present_date = new Date();
+                
+              // 0-11 is Month in JavaScript
+              var publish_day = new Date(2021, 11, 10)
+                
+              
+                
+              // To Calculate the result in milliseconds and then converting into days
+              var Result = Math.round(present_date.getTime() - publish_day.getTime()) / (one_month);
+                
+              // To remove the decimals from the (Result) resulting days value
+              var Final_Result = Result.toFixed(0);
+                
+              //To display the final_result value
+              document.write("Published " 
+              
+                             + Final_Result
+                            + " months ago");
+                
+              </script></span
+              ><span class="time">3 min read</span
               ><span class="comment"
                 ><a class="text-link" href="#">3 comments</a></span
               >
@@ -124,13 +149,14 @@
         alt="image"
   
     /></a>
-    <br>
+    <br><P style="font-size: 18px;">
                 Sports have a huge impact on a person’s mental and physical health as well as personality. Research has shown that sports and other outdoor activities can help make your heart stronger. Research shows that people who played sports at least once a week had a 41% less chance of dying from cardio problems. The same value for racket sports was 56%. 
                 <br><br>
                 Sports also help lower blood pressure, as well as lose body fat, which reduces the risk of diabetes, thus improving overall health. Sports help build up stamina and also help keep you in great shape. Sports also help blood circulation, as well as help, maintain cholesterol levels.
                 <br><br>
                 Sports also help with mental health problems as it helps reduce stress and anxiety. Sports are also a great way to meet new people and help forge connections. Team sports help build up leadership qualities as well as teach collaboration and teamwork. It also helps build up morale and helps introduce a sense of mutual respect. They also help people maintain a positive attitude. 
                 <br><br>
+                </P>
                 <div class="blog-post-body">
                   <figure class="blog-banner">
                     <img style="width: 70%; text-align: center; display: block; margin-left: auto; margin-right: auto; border-radius: 5%;"
@@ -140,10 +166,11 @@
                   
                     /></a>
                     <br>
+                    <P style="font-size: 18px;">
                 They also help boost self-esteem. Studies have shown that people who participate in sports are more confident and ready to make new connections. It also helps people sleep and be relaxed. Sports help stimulate a sense of calmness that aids in goal setting as well as commitments.
                 <br><br>
                 As you can see from the aforementioned benefits, sports are an integral part of our life and something that should be played often as they help us in many ways. The recent COVID pandemic has shown us how many blessings we take for granted, and sports are one of them. It is an area that has suffered a lot and is in the decline; that is the reason why we started this initiative to help bolster sports.
-            </p>
+                  </p> </p>
 
             <div id="disqus_thread"></div>
 <script>

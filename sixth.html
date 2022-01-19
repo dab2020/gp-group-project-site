@@ -96,7 +96,32 @@
           <header class="blog-post-header">
             <h2 class="title mb-2">What can be done to limit screen time?</h2>
             <div class="meta mb-3">
-              <span class="date">Published 3 days ago</span
+              <span class="date"><script type = "text/javascript" >
+                // By @dab2020 on github
+                  // One month Time in ms (milliseconds)
+                  var one_month = 1000 * 60 * 60 * 24 * 30
+                
+              // To set present_dates to two variables
+              var present_date = new Date();
+                
+              // 0-11 is Month in JavaScript
+              var publish_day = new Date(2021, 11, 10)
+                
+              
+                
+              // To Calculate the result in milliseconds and then converting into days
+              var Result = Math.round(present_date.getTime() - publish_day.getTime()) / (one_month);
+                
+              // To remove the decimals from the (Result) resulting days value
+              var Final_Result = Result.toFixed(0);
+                
+              //To display the final_result value
+              document.write("Published " 
+              
+                             + Final_Result
+                            + " months ago");
+                
+              </script></span
               ><span class="time">2 min read</span
               ><span class="comment"
                 ><a class="text-link" href="#">1 comments</a></span
@@ -125,7 +150,7 @@
       
   
     /></a>
-    <br>
+    <br><P style="font-size: 18px;">
                 The digital world is not something that can immediately be excluded from our life and we have to take small gradual steps to decrease our overall screen time. These steps include controlling the urge to check your phone after every five minutes, though this can be minimized by turning off notifications. We can remove the charger from our bedroom so that before we sleep we are not distracted by our phones.
                 <br><br>
                 <div class="blog-post-body">
@@ -138,9 +163,9 @@
                   
                     /></a>
                     <br>
-                    
+                  </p><P style="font-size: 18px;">
                 Other steps include trying to set a timer for overall usage. We should also try to find a hobby that motivates us to escape the grips of our devices and devote time to that other activity.
-            </p>
+                  </p> </p>
 
             <div id="disqus_thread"></div>
 <script>

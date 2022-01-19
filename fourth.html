@@ -96,8 +96,33 @@
           <header class="blog-post-header">
             <h2 class="title mb-2">How limiting screen time is important?</h2>
             <div class="meta mb-3">
-              <span class="date">Published 5 days ago</span
-              ><span class="time">5 min read</span
+              <span class="date"><script type = "text/javascript" >
+                // By @dab2020 on github
+                  // One month Time in ms (milliseconds)
+                  var one_month = 1000 * 60 * 60 * 24 * 30
+                
+              // To set present_dates to two variables
+              var present_date = new Date();
+                
+              // 0-11 is Month in JavaScript
+              var publish_day = new Date(2021, 11, 10)
+                
+              
+                
+              // To Calculate the result in milliseconds and then converting into days
+              var Result = Math.round(present_date.getTime() - publish_day.getTime()) / (one_month);
+                
+              // To remove the decimals from the (Result) resulting days value
+              var Final_Result = Result.toFixed(0);
+                
+              //To display the final_result value
+              document.write("Published " 
+              
+                             + Final_Result
+                            + " months ago");
+                
+              </script></span
+              ><span class="time">3 min read</span
               ><span class="comment"
                 ><a class="text-link" href="#">12 comments</a></span
               >
@@ -126,9 +151,9 @@
   
     /></a>
     <br>
-    
+    <p style="font-size: 18px;">
                 The increased screen time is definitely taking a toll on our health as the immediate effect is on our eyesight. It can cause eye fatigue, which can result in headaches and double vision.  Staring at a screen for a long time can cause dry and irritated eyes, which can cause blurry vision. Screens also emit blue light which can damage the light-sensitive cells of the retina, which can slowly cause eyesight degradation. The same blue light also causes sleep loss as it kills the hormone “melatonin” that helps induce sleep.  Studies have shown that excessive usage of digital devices can cause an increase in insulin and blood glucose levels, which also leads to an accumulation of fat in your bloodstream.
-                <br><br>
+                <br><br></p>
                 <div class="blog-post-body">
   <figure class="blog-banner">
     <img style="width: 70%; text-align: center; display: block; margin-left: auto; margin-right: auto; border-radius: 5%;"
@@ -136,11 +161,11 @@
         src="assets/images/blog/third/2.jpeg"
         alt="image"
         /></a>
-        <br>
+        <br><p style="font-size: 18px;">
                 Spending too much time in the digital world can also impair social skills and lower self-esteem and confidence. Getting rid of their addiction can have a lot of benefits for us. We have a lot of extra free time that would otherwise be spent scrolling through social media posts during which we can socialize and have fun by playing sports or other activities. Limiting screen time also helps boost our mood and reduce depression and anxiety.
                 <br><br>
                 This all goes to show how we have let technology wreak havoc on our lives and how it has affected us in many ways. Although a total ban on such devices is impossible, we can reduce the constant connections we have.
-            </p>
+              </p> </p>
 
             <div id="disqus_thread"></div>
 <script>
