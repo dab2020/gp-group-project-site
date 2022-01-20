@@ -16,7 +16,7 @@
 
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
-    <link rel="stylesheet" href="assets/js/plyr.js"
+    <link rel="stylesheet" href="assets/css/plyrvideo.css" />
   </head>
 
   <body>
@@ -144,8 +144,11 @@
 
               We will be assessing the change in the trend of recreational activities during COVID-19. We will be spreading awareness about the significance of sports as essential recreational activities and the importance of limiting screen time. We will also be analyzing the difference of perspectives between adolescents and adults regarding the change in the trend of recreational activities during COVID-19. We would like you to support us and join us on this initiative to revive recreation!
             </p>
-            <video class = "how-to-center" id="plyr-video" playsinline controls data-poster="assets/blog/video1/1.png">
-              <source src="assets/video/Interview.mp4" type="video/mp4" />
+            <div>
+<div class="how-to-center">
+    <video poster="assets/images/blog/video1/1.jpg" class="interveiw"><source src="assets/video/Interview.mp4"/></video>
+</div></div>
+<br>
 
             <div id="disqus_thread"></div>
 <script>
@@ -180,15 +183,14 @@
       </footer>
     </div>
     <!--//main-wrapper-->
-
+    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+    <script>
+         document.addEventListener('DOMContentLoaded', () => {
+             const player = Plyr.setup('.interveiw');
+         });
+     </script>
     <!-- Javascript -->
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Plyr.io Video component CDN-->
-    <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
-    
-    <script>
-      const player = new Plyr('#player');
-    </script>
   </body>
 </html>

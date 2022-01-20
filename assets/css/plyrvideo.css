@@ -135,6 +135,10 @@ background-position: 0% 50%;
   height: auto;
   vertical-align: middle;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .plyr button {
   font: inherit;
