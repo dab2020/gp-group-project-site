@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://biati-digital.github.io/glightbox/demo/css/style.css" />
+        <link rel="stylesheet" href="https://biati-digital.github.io/glightbox/dist/css/glightbox.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+     
+    
+
+        <title>Reviving Recreation</title>
+    </head>
+
+    <body>
+    
+        
+
+        
+        
+
+        <!-- Videos example -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        
+                        <ul class="box-container three-cols">
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/5jByZXZ7qBA" class="glightbox3" data-glightbox=" title: Interview # 1; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/yIYXnCgMp74" class="glightbox3" data-glightbox=" title: Interview # 2; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/XqDKTPg72mQ" class="glightbox3" data-glightbox=" title: Interview # 3; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                        
+                        <br>
+                        
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/_KkpnC39INQ" class="glightbox3" data-glightbox=" title: Interview # 4; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/Ip4tDWwQOwo" class="glightbox3" data-glightbox=" title: Interview # 5; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="box">
+                                <div class="inner">
+                                    <a href="https://www.youtube.com/embed/zM-ZeiRTTfI" class="glightbox3" data-glightbox=" title: Interview # 6; ">
+                                        <img src="assets/images/blog/video1/1.jpg" alt="image" />
+                                    </a>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+        
+
+        <br>
+        <br>
+        
+        </section>
+<!-- Java script stuff-->
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+        <script src="https://biati-digital.github.io/glightbox/demo/js/valde.min.js"></script>
+        <script src="https://biati-digital.github.io/glightbox/dist/js/glightbox.js"></script>
+        <script src="https://biati-digital.github.io/glightbox/demo/js/site.js"></script>
+        <script>
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', (event) => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+
+        </script>
+    </body>
+</html>
