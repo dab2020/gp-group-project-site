@@ -118,10 +118,7 @@ body {
 }
 
 a,
-a:hover {
-    text-decoration: none;
-    color: #000;
-}
+
 
 .text-center {
     text-align: center;
@@ -147,9 +144,7 @@ a:hover {
 
 
 
-a {
-    color: #000;
-}
+
 
 .mcbutton {
     padding: 11px 45px;
