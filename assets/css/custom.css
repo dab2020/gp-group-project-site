@@ -8,7 +8,7 @@ iframe,
 
 blockquote,
 pre,
-a,
+
 abbr,
 acronym,
 address,
@@ -31,16 +31,12 @@ sub,
 sup,
 tt,
 var,
-b,
-u,
-i,
+
 center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
+
 fieldset,
 form,
 label,
@@ -64,7 +60,7 @@ footer,
 header,
 hgroup,
 menu,
-nav,
+
 output,
 ruby,
 section,
@@ -297,14 +293,6 @@ strong {
     position: relative;
 }
 
-.box a {
-    display: block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-
 .box img {
     width: calc(100% + 50px);
     max-width: calc(100% + 50px);
@@ -462,9 +450,6 @@ footer {
     margin: 2rem 0;
 }
 
-footer a {
-    color: #000;
-}
 
 .copyright {
     font-size: 0.8em;
