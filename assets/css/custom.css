@@ -92,14 +92,7 @@ section {
 
 
 
-ol,
-ul {
-    list-style: none;
-}
 
-li {
-    margin-bottom: 10px;
-}
 
 .section {
     padding: 95px 0;
@@ -221,23 +214,11 @@ li {
     margin-right: 10px;
 }
 
-a {
-    text-decoration: none;
-}
 
-ol {
-    margin-left: 2em;
-    margin-bottom: 2em;
-}
 
-ul {
-    margin-left: 1em;
-    margin-bottom: 0;
-}
 
-ul ul {
-    margin-left: 1em;
-}
+
+
 
 strong {
     font-weight: 600;
